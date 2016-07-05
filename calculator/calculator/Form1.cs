@@ -15,5 +15,37 @@ namespace calculator
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double firstValue =  Convert.ToDouble(textBox1.Text) ;
+            double secondValue = Convert.ToDouble(textBox2.Text);
+            double thirdValue = firstValue + secondValue;
+            textBox3.Text = thirdValue.ToString();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            double secondValue = Convert.ToDouble(textBox2.Text);
+            double thirdValue = firstValue - secondValue;
+            textBox3.Text = thirdValue.ToString();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            double secondValue = Convert.ToDouble(textBox2.Text);
+            double thirdValue = firstValue * secondValue;
+            textBox3.Text = thirdValue.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            double secondValue = Convert.ToDouble(textBox2.Text);
+            double thirdValue = firstValue / secondValue;
+            textBox3.Text = thirdValue.ToString();
+        }
     }
 }
